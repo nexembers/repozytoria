@@ -1,0 +1,5 @@
+Instrukcja obsługi dla użytkownika:
+-----------------------------------------------------------------------------------
+
+Zainstalować bazę danych (może być lokalnie lub zewnętrznie) - plik: db_79803.
+Wrzucić pliki do Android Studio (znajdują się w folderze APLIKACJA).

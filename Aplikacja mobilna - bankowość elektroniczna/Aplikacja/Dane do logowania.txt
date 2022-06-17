@@ -1,0 +1,10 @@
+Konto rodzica:
+		PESEL: 54021525142
+		Hasło: 11221122Qq
+		Nr rachunku bankowego: 69934095
+
+
+Konto dziecka:
+		PESEL: 54021525144
+		Hasło: 11221122Qq
+		Nr rachunku bankowego: 68104328

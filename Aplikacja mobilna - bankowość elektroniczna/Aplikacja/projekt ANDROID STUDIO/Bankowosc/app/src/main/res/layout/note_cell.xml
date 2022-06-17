@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:layout_height="120dp">
+
+    <TextView
+        android:id="@+id/cellTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/cellDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desctiption"
+        android:textStyle="bold"
+        android:layout_gravity="start"
+        android:maxLines="1"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/green"
+        android:textSize="17sp"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/cellData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="Date"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:textColor="@color/grey"
+        android:textSize="17sp"
+        >
+    </TextView>
+
+</LinearLayout>
