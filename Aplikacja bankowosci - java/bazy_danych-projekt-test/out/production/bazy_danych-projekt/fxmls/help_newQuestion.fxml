@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Help_NewQuestion">
+   <children>
+      <Button layoutX="557.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" text="X">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="237.0" layoutY="361.0" mnemonicParsing="false" onAction="#create_question" text="Stwórz pytanie">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="168.0" layoutY="17.0" text="ZADAWANIE NOWEGO PYTANIA">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="title_question" layoutX="14.0" layoutY="62.0" prefHeight="54.0" prefWidth="570.0" promptText="Wprowadź temat pytania (maksymalnie 64 znaki)" />
+      <TextArea fx:id="text_question" layoutX="14.0" layoutY="130.0" prefHeight="214.0" prefWidth="570.0" promptText="Opisz problem. Zawrzyj w swojej wypowiedzi najważniejsze pytanie, które chcesz zadać do Pracownika banku (maksymalnie 1024 znaków)" wrapText="true" />
+   </children>
+</AnchorPane>

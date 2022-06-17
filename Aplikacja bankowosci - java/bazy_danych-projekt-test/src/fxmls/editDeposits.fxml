@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="260.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EditDeposits">
+   <children>
+      <Button layoutX="557.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="X">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="134.0" layoutY="16.0" text="Edycja dostępnych lokat dla klientów">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="deposits" layoutX="9.0" layoutY="95.0" prefHeight="25.0" prefWidth="583.0" />
+      <Label layoutX="35.0" layoutY="74.0" text="Jeśli chcesz deaktywować lokatę, wybierz jedną z poniższej dostępnych w banku.">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="248.0" layoutY="128.0" mnemonicParsing="false" onAction="#delete_deposit" text="Usuń lokatę">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="9.0" layoutY="170.0" prefHeight="17.0" prefWidth="583.0" text="------------------------------------------------------------------------------------------------------------------------" />
+      <Label layoutX="24.0" layoutY="190.0" text="Jeśli chcesz stworzyć nową lokatę dla klientów banku, skorzystaj z przycisku poniżej.">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="242.0" layoutY="218.0" mnemonicParsing="false" onAction="#createDeposit" text="Stwórz lokatę">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

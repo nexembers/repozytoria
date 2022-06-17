@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CreateDeposit">
+   <children>
+      <Button layoutX="557.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="X">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="177.0" layoutY="16.0" text="TWORZENIE NOWEJ LOKATY">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Button layoutX="242.0" layoutY="355.0" mnemonicParsing="false" onAction="#create_deposit" text="Stwórz lokatę">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="selects" layoutX="6.0" layoutY="153.0" prefHeight="25.0" prefWidth="590.0" />
+      <Label layoutX="105.0" layoutY="40.0" prefHeight="53.0" prefWidth="391.0" text="Aby przeznaczyć fundusze na lokatę, pieniądze muszą znajdować się na Twoim rachunku głównym." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="balance_mainBill" alignment="CENTER" layoutX="-2.0" layoutY="92.0" prefHeight="17.0" prefWidth="600.0" text="Stan konta rachunku głównego: " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="227.0" layoutY="132.0" text="Wybierz rodzaj lokaty">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="105.0" layoutY="211.0" text="Wpisz kwotę, którą chcesz przeznaczyć na założenie lokaty">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="balance_deposit" layoutX="206.0" layoutY="241.0" prefHeight="25.0" prefWidth="185.0" promptText="wpisz kwotę (liczba całkowita)" />
+      <Label layoutX="9.0" layoutY="277.0" prefHeight="72.0" prefWidth="582.0" text="INFORMACJA:    Lokatę można zakończyć w dowolnym momencie, lecz nie otrzymasz wówczas należnych odsetek. Pamiętaj, że od zysku brutto należy odjąć podatek belki w wysokości 19%. Po zakończeniu lokaty możesz otrzymać pełną kwotę, wraz ze zyskiem z lokaty, która zostanie dodana do biężacej kwoty Twojego rachunku głównego." textAlignment="CENTER" wrapText="true" />
+   </children>
+</AnchorPane>

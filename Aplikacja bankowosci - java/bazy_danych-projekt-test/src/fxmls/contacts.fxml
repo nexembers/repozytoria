@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Contacts">
+   <children>
+      <Button layoutX="557.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="X">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="220.0" layoutY="16.0" text="TWOJE KONTAKTY">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="226.0" layoutY="59.0" text="Wybierz kontakt z listy">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="contacts" layoutX="13.0" layoutY="80.0" prefHeight="25.0" prefWidth="575.0" />
+      <Button layoutX="244.0" layoutY="111.0" mnemonicParsing="false" onAction="#delete_contact" text="Usuń kontakt">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="218.0" layoutY="149.0" mnemonicParsing="false" onAction="#create_contact" text="Stwórz nowy kontakt">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="210.0" layoutY="285.0" mnemonicParsing="false" onAction="#edit_contact" text="Zmień nazwę kontaktu">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="189.0" layoutY="355.0" mnemonicParsing="false" onAction="#send_contact" text="Wyślij przelew do znajomego">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="56.0" layoutY="233.0" text="Jeśli chcesz zmienić nazwę kontaktu, zaznacz kontakt i wprowadź nową nazwę poniżej.">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="edit_name" layoutX="153.0" layoutY="252.0" prefHeight="25.0" prefWidth="300.0" />
+   </children>
+</AnchorPane>

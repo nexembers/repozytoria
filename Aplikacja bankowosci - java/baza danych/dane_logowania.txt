@@ -1,0 +1,7 @@
+Pracownik:
+	identyfikator: 665570852
+	hasło: 11221122Qq
+
+Klient:
+	identyfikator: 840358410
+	hasło: 11221122

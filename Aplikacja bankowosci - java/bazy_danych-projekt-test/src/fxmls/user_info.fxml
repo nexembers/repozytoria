@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="255.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.user_info">
+   <children>
+      <Button layoutX="557.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="X">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="157.0" layoutY="16.0" text="INFORMACJE O UŻYTKOWNIKU">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="13.0" layoutY="69.0" prefHeight="87.0" prefWidth="575.0" text="Możesz wyszukać informacje o użytkowniku podające jego numer PESEL lub jego identyfikator. W przypadku podania numer PESEL, wprowadź 11-cyfrowy ciąg cyfr. W przypadku wyszukiwania informacji o użytkowniku przez jego identyfikator, wprowadź unikalny ciąg 9-ciu cyfr." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="225.0" layoutY="210.0" mnemonicParsing="false" onAction="#check_info" text="Sprawdź informacje">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="info_user" alignment="CENTER" layoutX="226.0" layoutY="165.0" promptText="pesel / identyfikator" />
+   </children>
+</AnchorPane>

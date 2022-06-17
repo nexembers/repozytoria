@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Transfer">
+   <children>
+      <Button layoutX="557.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="X">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="133.0" layoutY="15.0" text="ZLECANIE WYKONANIA PRZELEWU">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="229.0" layoutY="355.0" mnemonicParsing="false" onAction="#make_a_transfer" text="Wykonaj przelew">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="178.0" layoutY="54.0" text="Wybierz rachunek nadawcy przelewu">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="sender_bills" layoutX="25.0" layoutY="75.0" prefHeight="25.0" prefWidth="550.0" />
+      <Label layoutX="150.0" layoutY="108.0" text="Wpisz dane adresata przelewu (max 64 znaki)">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="receiver_data" alignment="CENTER" layoutX="75.0" layoutY="129.0" prefHeight="25.0" prefWidth="450.0" promptText="dane adresata" />
+      <Label layoutX="155.0" layoutY="166.0" text="Wpisz 16-cyfrowy numer rachunku adresata">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="receiver_billNumber" alignment="CENTER" layoutX="200.0" layoutY="188.0" prefHeight="25.0" prefWidth="200.0" promptText="numer rachunku adresata" />
+      <Label layoutX="171.0" layoutY="224.0" text="Wpisz opis przelewu (max 128 znaków)">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="receiver_desc" alignment="CENTER" layoutX="15.0" layoutY="245.0" prefHeight="25.0" prefWidth="570.0" promptText="opis przelewu" />
+      <Label layoutX="225.0" layoutY="282.0" text="Wpisz kwotę transakcji">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="receiver_value" alignment="CENTER" layoutX="226.0" layoutY="303.0" promptText="kwota transakcji" />
+   </children>
+</AnchorPane>

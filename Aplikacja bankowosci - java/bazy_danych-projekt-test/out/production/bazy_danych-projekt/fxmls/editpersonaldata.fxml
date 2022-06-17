@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Editpersonaldata">
+   <children>
+      <Button layoutX="170.0" layoutY="427.0" mnemonicParsing="false" onAction="#zapisz_dane" prefHeight="35.0" prefWidth="300.0" text="Zapisz swoje dane personalne" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="596.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="30.0" text="X" />
+      <Label layoutX="170.0" layoutY="32.0" text="Dane adresowe" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <TextField fx:id="ulica" layoutX="119.0" layoutY="69.0" prefHeight="25.0" prefWidth="250.0" promptText="ulica" />
+      <TextField fx:id="nr_domu" layoutX="119.0" layoutY="104.0" prefHeight="25.0" prefWidth="125.0" promptText="numer domu/lokalu" />
+      <TextField fx:id="kod_poczt" layoutX="119.0" layoutY="143.0" prefHeight="25.0" prefWidth="125.0" promptText="kod pocztowy" />
+      <TextField fx:id="miejscowosc" layoutX="119.0" layoutY="179.0" prefHeight="30.0" prefWidth="250.0" promptText="miejscowość" />
+      <Label layoutX="163.0" layoutY="240.0" text="Dane kontaktowe">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <TextField fx:id="email" layoutX="119.0" layoutY="272.0" prefHeight="25.0" prefWidth="250.0" promptText="adres e-mail" />
+      <TextField fx:id="tel" layoutX="119.0" layoutY="309.0" prefHeight="25.0" prefWidth="150.0" promptText="telefon komórkowy" />
+      <Label layoutX="42.0" layoutY="71.0" text="Ulica">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="106.0" text="Ulica cd.">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="12.0" layoutY="145.0" text="Kod pocztowy">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="184.0" text="Miejscowość">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="274.0" text="Adres e-mail">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="311.0" text="Telefon">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="527.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Main">
+   <children>
+      <Button layoutX="200.0" layoutY="476.0" mnemonicParsing="false" onAction="#logout" prefHeight="30.0" prefWidth="400.0" text="Zakończ sesję i wyloguj się z konta bankowego">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="editpersonaldata" layoutX="322.0" layoutY="157.0" mnemonicParsing="false" onAction="#editpersonaldata" text="Edytuj dane personalne">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="kursy_walut" layoutX="355.0" layoutY="397.0" mnemonicParsing="false" onAction="#kursy_walut" text="Kursy walut">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="pomoc" layoutX="369.0" layoutY="431.0" mnemonicParsing="false" onAction="#pomoc" text="Pomoc">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="rachunki" layoutX="362.0" layoutY="238.0" mnemonicParsing="false" onAction="#rachunki" text="Rachunki">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="deposits" layoutX="370.0" layoutY="204.0" mnemonicParsing="false" onAction="#deposits" text="Lokaty">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="contacts" layoutX="363.0" layoutY="272.0" mnemonicParsing="false" onAction="#contacts" text="Kontakty">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="message" alignment="CENTER" contentDisplay="CENTER" layoutX="108.0" layoutY="14.0" prefHeight="21.0" prefWidth="594.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="make_transfer" layoutX="338.0" layoutY="319.0" mnemonicParsing="false" onAction="#make_transfer" text="Wykonaj przelew">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="il_rachunkow" alignment="CENTER" layoutX="7.0" layoutY="35.0" prefHeight="21.0" prefWidth="787.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="il_lokat" alignment="CENTER" layoutX="7.0" layoutY="56.0" prefHeight="21.0" prefWidth="787.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="il_spraw" alignment="CENTER" layoutX="7.0" layoutY="77.0" prefHeight="21.0" prefWidth="787.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="il_aktywnosci" alignment="CENTER" layoutX="7.0" layoutY="98.0" prefHeight="21.0" prefWidth="787.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="331.0" layoutY="353.0" mnemonicParsing="false" onAction="#lastPays" text="Ostatnie przelewy">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

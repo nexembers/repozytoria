@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Exchangerates">
+   <children>
+      <Button layoutX="597.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" text="X">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="204.0" layoutY="15.0" text="AKTUALNE KURSY WALUT">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <effect>
+            <Bloom />
+         </effect>
+      </Label>
+      <TableView fx:id="kursy_walut_tabela" layoutX="12.0" layoutY="56.0" prefHeight="412.0" prefWidth="617.0">
+        <columns>
+          <TableColumn fx:id="nazwa_waluty" prefWidth="250.0" text="Nazwa" />
+          <TableColumn fx:id="skrot_waluty" prefWidth="71.0" text="Skrót" />
+            <TableColumn fx:id="symbol_waluty" prefWidth="59.0" text="Symbol" />
+            <TableColumn fx:id="kurskupna_waluty" prefWidth="107.0" text="Kurs kupna" />
+            <TableColumn fx:id="kurssprzedazy_waluty" prefWidth="129.0" text="Kurs sprzedaży" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

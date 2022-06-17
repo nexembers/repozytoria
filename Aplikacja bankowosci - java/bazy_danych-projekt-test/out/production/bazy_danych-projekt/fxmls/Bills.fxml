@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Bills">
+   <children>
+      <Button layoutX="557.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="X">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="203.0" layoutY="16.0" text="RACHUNKI OSOBISTE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <TableView fx:id="Billstable" layoutX="14.0" layoutY="54.0" prefHeight="200.0" prefWidth="569.0">
+        <columns>
+          <TableColumn fx:id="nazwa_bills" prefWidth="188.0" text="nazwa rachunku" />
+          <TableColumn fx:id="numer_bills" prefWidth="136.0" text="numer rachunku" />
+            <TableColumn fx:id="data_bills" prefWidth="88.0" text="data założenia" />
+            <TableColumn fx:id="saldo_bills" prefWidth="105.0" text="saldo" />
+            <TableColumn fx:id="waluta_bills" prefWidth="51.0" text="waluta" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="256.0" prefHeight="68.0" prefWidth="569.0" text="Jeśli chcesz utworzyć rachunek osobisty w banku, zgloś się do Pracownika banku w dziale 'pomoc'. Przy prośbie o założenie nowego rachunku osobistego, wpisz nazwę, którą chcesz zadeklarować na stworzenie rachunku." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="456.0" layoutY="349.0" mnemonicParsing="false" onAction="#make_transfer" text="Wyślij przelew">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="20.0" layoutY="349.0" mnemonicParsing="false" onAction="#delete_bill" text="Usuń rachunek">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="163.0" layoutY="349.0" mnemonicParsing="false" onAction="#createBill" text="Stwórz rachunek">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

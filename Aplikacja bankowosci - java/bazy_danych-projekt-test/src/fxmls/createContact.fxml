@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="235.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.createContact">
+   <children>
+      <Button layoutX="557.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="X">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="145.0" layoutY="16.0" text="TWORZENIE NOWEGO KONTAKTU">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bill_numer" layoutX="202.0" layoutY="85.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="169.0" layoutY="64.0" text="Wprowadź numer rachunku bankowego">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="contact_desc" layoutX="63.0" layoutY="150.0" prefHeight="25.0" prefWidth="475.0" />
+      <Label layoutX="123.0" layoutY="129.0" text="Wprowadź opis kontaktu (min. 4 znaki | max. 64 znaki)">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="236.0" layoutY="190.0" mnemonicParsing="false" onAction="#create_contact" text="Stwórz kontakt">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

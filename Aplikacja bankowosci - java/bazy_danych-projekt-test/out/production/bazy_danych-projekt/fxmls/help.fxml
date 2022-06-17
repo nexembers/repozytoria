@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="panel1" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.help">
+   <children>
+      <Button layoutX="557.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" text="X">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="info1" alignment="CENTER" layoutX="16.0" layoutY="14.0" prefHeight="31.0" prefWidth="541.0" text="DZIAŁ POMOCY" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="create_question" layoutX="241.0" layoutY="363.0" mnemonicParsing="false" onAction="#create_question" text="Stwórz pytanie" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="pomoc" layoutX="14.0" layoutY="55.0" onMouseClicked="#click" prefHeight="268.0" prefWidth="572.0" visible="false">
+        <columns>
+            <TableColumn fx:id="id_pomoc" prefWidth="41.0" text="id" />
+          <TableColumn fx:id="data_pomoc" prefWidth="82.0" text="data" />
+          <TableColumn fx:id="temat_pomoc" prefWidth="292.0" text="temat pytania" />
+            <TableColumn fx:id="zakonczono_pomoc" minWidth="0.0" prefWidth="66.0" text="zamkniete" />
+            <TableColumn fx:id="ilosc_pomoc" prefWidth="90.0" text="il. wiadomości" />
+        </columns>
+      </TableView>
+      <Label fx:id="info2" layoutX="88.0" layoutY="338.0" text="Jeśli potrzebujesz pomocy, skontaktuj się z Pracownikiem banku." visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="odpowiedzi" layoutX="15.0" layoutY="53.0" onMouseClicked="#click2" prefHeight="152.0" prefWidth="572.0">
+        <columns>
+          <TableColumn fx:id="odpowiedz_id" prefWidth="49.0" text="id" />
+          <TableColumn fx:id="odpowiedz_data" prefWidth="101.0" text="data wiadomości" />
+            <TableColumn fx:id="odpowiedz_imie" prefWidth="143.0" text="imię" />
+            <TableColumn fx:id="odpowiedz_nazwisko" prefWidth="121.0" text="nazwisko" />
+            <TableColumn fx:id="odpowiedz_identyfikator" prefWidth="157.0" text="identyfikator" />
+        </columns>
+      </TableView>
+      <TextArea fx:id="odpowiedz_wiadomosc" editable="false" layoutX="15.0" layoutY="213.0" prefHeight="143.0" prefWidth="572.0" wrapText="true" />
+      <Button fx:id="odpowiedz" layoutX="345.0" layoutY="366.0" mnemonicParsing="false" onAction="#addreply" text="Dodaj odpowiedź do pytania" />
+      <Button fx:id="end_question" layoutX="88.0" layoutY="366.0" mnemonicParsing="false" onAction="#end_question" text="Zakończ pytanie" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EmployeeMain">
+   <children>
+      <Label layoutX="143.0" layoutY="14.0" text="Jesteś zalogowany jako Pracownik banku.">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="186.0" layoutY="255.0" mnemonicParsing="false" onAction="#logout" text="Wyloguj się z konta pracownika">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="253.0" layoutY="170.0" mnemonicParsing="false" onAction="#editExchangeRates" text="Kursy walut">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="269.0" layoutY="135.0" mnemonicParsing="false" onAction="#editDeposits" text="Lokaty">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="214.0" layoutY="83.0" mnemonicParsing="false" onAction="#questions" text="Pytania klientów banku">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="216.0" layoutY="48.0" mnemonicParsing="false" onAction="#check_user" text="Sprawdź klienta banku">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="212.0" layoutY="220.0" mnemonicParsing="false" onAction="#edit_data_employee" text="Edytuj dane pracownika">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

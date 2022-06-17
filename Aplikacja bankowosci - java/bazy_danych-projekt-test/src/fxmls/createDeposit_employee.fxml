@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="320.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.createDeposit_employee">
+   <children>
+      <Button layoutX="557.0" layoutY="8.0" mnemonicParsing="false" onAction="#back" text="X">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Label layoutX="170.0" layoutY="14.0" text="TWORZENIE NOWEJ LOKATY">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="220.0" layoutY="51.0" text="Wprowadź nazwę lokaty">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="deposit_name" alignment="CENTER" layoutX="100.0" layoutY="72.0" prefHeight="25.0" prefWidth="400.0" promptText="nazwa lokaty" />
+      <Label layoutX="187.0" layoutY="105.0" text="Wprowadź oprocentowanie lokaty">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="deposit_procent" alignment="CENTER" layoutX="226.0" layoutY="126.0" promptText="oprocentowanie" />
+      <Label layoutX="183.0" layoutY="161.0" text="Wprowadź czas trwania lokaty (dni)">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="deposit_time" alignment="CENTER" layoutX="250.0" layoutY="182.0" prefHeight="25.0" prefWidth="100.0" promptText="czas trwania" />
+      <Label layoutX="177.0" layoutY="218.0" text="Wprowadź limit kwoty (od 1000 PLN)">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="deposit_limit" alignment="CENTER" layoutX="226.0" layoutY="239.0" promptText="limit kwoty" />
+      <Button layoutX="242.0" layoutY="275.0" mnemonicParsing="false" onAction="#create_deposit" text="Stwórz lokatę">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

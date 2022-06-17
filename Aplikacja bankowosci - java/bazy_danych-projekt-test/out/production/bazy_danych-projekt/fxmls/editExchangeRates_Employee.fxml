@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EditExchangeRatesEmployee">
+   <children>
+      <Button layoutX="557.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="X">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="140.0" layoutY="15.0" text="Kursy walut - z możliwością edycji">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="225.0" layoutY="355.0" mnemonicParsing="false" onAction="#edit_course" text="Edytuj kurs waluty">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+       <TableView fx:id="kursy_walut_tabela" layoutX="6.0" layoutY="57.0" prefHeight="221.0" prefWidth="588.0">
+           <columns>
+               <TableColumn fx:id="nazwa_waluty" prefWidth="240.0" text="Nazwa" />
+               <TableColumn fx:id="skrot_waluty" prefWidth="93.0" text="Skrót" />
+               <TableColumn fx:id="symbol_waluty" prefWidth="88.0" text="Symbol" />
+               <TableColumn fx:id="kurskupna_waluty" minWidth="0.0" prefWidth="73.0" text="Kurs kupna" />
+               <TableColumn fx:id="kurssprzedazy_waluty" prefWidth="96.0" text="Kurs sprzedaży" />
+           </columns>
+       </TableView>
+      <TextField fx:id="kurs_kupna" layoutX="215.0" layoutY="287.0" prefHeight="25.0" prefWidth="160.0" promptText="Kurs kupna" />
+      <TextField fx:id="kurs_sprzedazy" layoutX="215.0" layoutY="320.0" prefHeight="25.0" prefWidth="160.0" promptText="Kurs sprzedaży" />
+      <Label layoutX="94.0" layoutY="289.0" text="Nowy kurs kupna">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="322.0" text="Nowy kurs sprzedaży">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

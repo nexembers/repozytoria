@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="235.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.createBill_employee">
+   <children>
+      <Button layoutX="557.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="X">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="78.0" layoutY="16.0" text="TWORZENIE NOWEGO RACHUNKU BANKOWEGO">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="52.0" prefHeight="66.0" prefWidth="570.0" text="Wybierz typ rachunku z poniższej listy, który chcesz stworzyć dla wcześniej zadeklarowanego użytkownika. Pamiętaj, że dany użytkownik musi posiadać konto główne (maksymalnie jedno) oraz ewentualne konta opcjonalne." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="203.0" layoutY="190.0" mnemonicParsing="false" onAction="#create_bill" text="Stwórz rachunek bankowy">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="type_bill" layoutX="50.0" layoutY="141.0" prefHeight="25.0" prefWidth="500.0" />
+   </children>
+</AnchorPane>

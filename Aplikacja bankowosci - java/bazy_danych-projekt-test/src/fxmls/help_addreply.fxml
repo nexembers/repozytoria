@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Help_Addreply">
+   <children>
+      <Button layoutX="557.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" text="X">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="152.0" layoutY="17.0" text="NOWA ODPOWIEDŹ DO PYTANIA">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="211.0" layoutY="355.0" mnemonicParsing="false" onAction="#add_reply" text="Dodaj odpowiedź">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="text_reply" layoutX="14.0" layoutY="78.0" prefHeight="270.0" prefWidth="572.0" promptText="Wprowadź treść tutaj" wrapText="true" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-2.0" layoutY="45.0" prefHeight="17.0" prefWidth="600.0" text="(( max 1024 znaków ))" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
