@@ -1,0 +1,13 @@
+<meta>
+<info author="NeX; Krystian Janas" name="Calm Life" description="Copyright 2016/17/..." />
+	<min_mta_version server="1.5.5-9.13846"/>
+	<script src="server.lua" type="server" />	
+	<sync_map_element_data>false</sync_map_element_data>
+</meta>
+
+<!-- Skrypt stworzony przez NeX; Krystian Janas -->
+<!-- Zakazuje się edycji/zmieniania wszelkich treści znajdujących się w skrypcie bez wcześniejszej zgody autora -->
+<!-- Zakazuje się rozpowszechniania wszelkich treści znajdujących się w skrypcie bądź przygarnięcią części kodu bez zgody autora -->
+<!-- Zakazuje się usuwania PIERWOTNEGO autora po wydaniu zgody na użytkowanie przez autora -->
+<!-- Zakazuje się używania skryptu bez zgody autora -->
+<!-- Kontakt z pierwotnym autorem: postofficeNeX@gmail.com -->

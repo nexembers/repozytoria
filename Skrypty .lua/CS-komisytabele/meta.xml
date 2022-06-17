@@ -1,0 +1,19 @@
+<meta>
+	<info author="NeX" type="script" version="1.0" description="Calm Story"/>
+	
+	<script src="server.lua" type="server"/>
+	<script src="client.lua" type="client" cache="false"/>
+
+	<file src="images/button.png"/>
+	<file src="images/main.png"/>
+	<file src="images/close.png"/>
+	<file src="images/back.png"/>
+	
+	<sync_map_element_data>false</sync_map_element_data>
+</meta>
+
+
+<!-- Właścicielem zasobów jest Krystian Janas, pseudonim NeX - zasoby opublikowane są jedynie na serwer Calm Story. -->
+<!-- Zgodę na używanie zasobów ma jedynie serwer Calm Story oraz jego właściciel. -->
+<!-- Zakazuje się rozpowszechniania zasobu bądź jego edycji i używania w przypadku jakiegokolwiek uzyskania treści kodu. -->
+<!-- Kontakt jedynie e-mailowo: postofficeNeX@gmail.com -->

@@ -1,0 +1,23 @@
+<meta>
+<info author="NeX; Krystian Janas" name="Calm Life" description="Copyright 2016/17/..." version="1.0" />
+	<script src="server.lua" type="server" />
+	<script src="client.lua" type="client" cache="false"/>
+	
+	<file src="frakcja.mp3"/>
+	<file src="sluzby.mp3"/>
+	
+	<file src="images/main.png"/>
+	<file src="images/button.png"/>
+	<file src="images/close.png"/>
+	
+	<sync_map_element_data>false</sync_map_element_data>
+
+	<export function="fact_payManual" type="server"/>
+</meta>
+
+<!-- Skrypt stworzony przez NeX; Krystian Janas -->
+<!-- Zakazuje się edycji/zmieniania wszelkich treści znajdujących się w skrypcie bez wcześniejszej zgody autora -->
+<!-- Zakazuje się rozpowszechniania wszelkich treści znajdujących się w skrypcie bądź przygarnięcią części kodu bez zgody autora -->
+<!-- Zakazuje się usuwania PIERWOTNEGO autora po wydaniu zgody na użytkowanie przez autora -->
+<!-- Zakazuje się używania skryptu bez zgody autora -->
+<!-- Kontakt z pierwotnym autorem: postofficeNeX@gmail.com -->

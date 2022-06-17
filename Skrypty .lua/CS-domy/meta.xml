@@ -1,0 +1,23 @@
+<meta>
+	<info author="NeX" type="script" version="1.0" description="Calm Story"/>
+	
+	<script src="server.lua" type="server"/>
+	<script src="client.lua" type="client" cache="false"/>
+	
+	<file src="images/main.png"/>
+	<file src="images/house.png"/>
+	<file src="images/house_p.png"/>
+	<file src="images/lock.png"/>
+	<file src="images/lock_p.png"/>
+	<file src="images/payment.png"/>
+	<file src="images/payment_p.png"/>
+	<file src="images/settings.png"/>
+	<file src="images/settings_p.png"/>
+	<file src="images/unlockhouse.png"/>
+	<file src="images/unlockhouse_p.png"/>
+	<file src="images/button.png"/>
+	
+	<sync_map_element_data>false</sync_map_element_data>
+
+	<export function="reloadHouse" type="server"/>
+</meta>
