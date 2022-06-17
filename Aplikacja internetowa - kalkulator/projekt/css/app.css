@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --main-background-color: #f2f2f2;
+    --main-text-color: #333333;
+    --secondary-text-color: #999999;
+    --light-text-color: #ffffff;
+    --main-panel-color: #ffffff;
+    --main-shadow-color: #d8d8d8;
+    --gradient-color-one: #21d4fd;
+    --gradeint-color-two: #b721ff;
+    --input-focus-color: #0000ff;
+    --success-color: #21c100;
+    --error-color: #ff0000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background-color: var(--main-background-color);
+    font-family: 'Poppins', sans-serif;
+    color: var(--main-text-color);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.shadow {
+    box-shadow: 0 5px 10px 0px var(--main-shadow-color);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.text-center {
+    text-align: center;
+}
+/* tables */
+.table-wrapper {
+    overflow: auto;
+}
+
+.table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.table tr {
+    font-size: 14px;
+}
+
+.table td, th {
+    padding: .5rem;
+}
+
+.table tr:first-child {
+    background-color: var(--main-shadow-color);
+}
+
+.table tr:nth-child(2n+3) td {
+    background: var(--main-background-color);
+}
+
+/* links */
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* font */
+.font-size-xs {
+    font-size: .8rem;
+}
+
+.font-size-s {
+    font-size: .9rem;
+}
+
+/* inputs */
+.input-container {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.input-field {
+    height: 3rem;
+    width: 100%;
+    padding: .5rem;
+    color: inherit;
+    font-family: inherit;
+    background-color: var(--main-background-color);
+    border: 1px solid var(--main-shadow-color);
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid var(--input-focus-color) !important;
+}
+
+.input-field--error {
+    border: 2px solid var(--error-color) !important;
+}
+/* buttons */
+.button {
+    width: 100%;
+    height: 3rem;
+    font-family: inherit;
+    color: var(--light-text-color);
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, var(--gradient-color-one), var(--gradeint-color-two));
+    background-size: 200% 100%;
+    background-position: 0;
+    transition: .5s ease;
+    padding: .5rem;
+}
+
+.button:hover {
+    background-position: 100% 0;
+}
+
+/* alerts */
+.alert {
+    padding: .5rem;
+    color: var(--light-text-color);
+}
+
+.alert--success {
+    background-color: var(--success-color);
+}
+
+.alert--error {
+    background-color: var(--error-color);
+}

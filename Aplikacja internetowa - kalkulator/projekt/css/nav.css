@@ -1,0 +1,83 @@
+.nav-toggle-button {
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+    z-index: 1001;
+    background-color: var(--main-panel-color);
+    background-image: url('../img/menu-button.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    display: none;
+}
+
+.nav-bar {
+    height: 100vh;
+    width: 270px;
+    background-color: var(--main-panel-color);
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1000;
+    left: 0;
+    user-select: none;
+}
+
+.user-info {
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.user-info__image {
+    height: 5rem;
+}
+
+.user-info__email {
+    display: block;
+    font-weight: normal;
+}
+
+.nav-bar__menu {
+    list-style-type: none;
+    padding: 0 2rem;
+}
+
+.nav-bar__menu li > a {
+    justify-content: space-between;
+    padding: .5rem 0;
+}
+
+.nav-bar__menu li:hover img {
+    transform: scale(2);
+}
+
+.nav-bar__menu li:hover span {
+    transform: scale(1.2);
+}
+
+.nav-bar__menu span {
+    transition: .25s ease;
+}
+
+.nav-bar__menu img {
+    height: 1rem;
+    transition: .25s ease;
+}
+
+.nav-bar__logout {
+    padding: 2rem;
+}
+
+.nav--active {
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    .nav-bar {
+        left: -100%;
+    }
+
+    .nav-toggle-button {
+        display: block;
+    }
+}
+  

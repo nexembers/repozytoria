@@ -1,0 +1,8 @@
+button {
+    cursor: pointer;
+    width: 150px !important;
+}
+
+.calculator-button-wrapper {
+    justify-content: space-between;
+}

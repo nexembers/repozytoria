@@ -1,0 +1,26 @@
+.content {
+    width: 100%;
+    padding-left: 270px;
+    min-height: 100vh;
+}
+
+.content__wrapper {
+    padding: 2rem;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.content__panel {
+    background-color: var(--main-panel-color);
+    padding: 2rem;
+}
+
+.content h2 {
+    margin-top: 0;
+}
+
+@media (max-width: 1024px) {
+    .content {
+        padding-left: 0;
+    }
+}
